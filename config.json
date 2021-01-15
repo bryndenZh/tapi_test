@@ -1,0 +1,17 @@
+{
+  "service_name": "DSR_node337_node340_uni1",
+  "src_topology_node_id": 337,
+  "dst_topology_node_id": 340,
+  "src_uni_loc": 1,
+  "dst_uni_loc": 1,
+  "include_node": [339],
+  "include_link": [],
+  "exclude_node": [],
+  "exclude_link": [361]
+}
+
+
+
+
+
+

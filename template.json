@@ -1,0 +1,62 @@
+{
+    "service-layer": "DSR",
+    "uuid": "",
+    "name": [
+        {
+            "value-name": "SERVICE_NAME",
+            "value": ""
+        }
+    ],
+    "service-type": "POINT_TO_POINT_CONNECTIVITY",
+    "requested-capacity": {
+        "total-size": {
+            "value": 1280,
+            "unit": "MBPS"
+        }
+    },
+    "connectivity-direction": "BIDIRECTIONAL",
+    "is-exclusive": true,
+    "service-level":"SILVER_LEVEL",
+    "resilience-type": {
+        "protection-type": "ONE_PLUS_ONE_PROTECTION"
+    },
+    "is-coordinated-switching-both-ends": true,
+    "reversion-mode":"REVERTIVE",
+    "preferred-restoration-layer": [
+        "ODU"
+    ],
+    "hold-off-time": 0,
+    "wait-to-revert-time": 1,
+    "route-objective-function":"MIN_WORK_ROUTE_LATENCY",
+    "include-node": [
+    ],
+    "exclude-node": [
+    ],
+    "include-link": [
+
+    ],
+    "exclude-link": [
+    ],
+    "end-point": [
+        {
+            "local-id": "",
+            "role":"SYMMETRIC",
+            "direction":"BIDIRECTIONAL",
+            "service-interface-point": {
+                "service-interface-point-uuid": ""
+            },
+            "layer-protocol-name": "DSR",
+            "layer-protocol-qualifier": "tapi-dsr:DIGITAL_SIGNAL_TYPE_GigE"
+        },
+        {
+            "local-id": "",
+            "role":"SYMMETRIC",
+            "direction":"BIDIRECTIONAL",
+            "service-interface-point": {
+                "service-interface-point-uuid": ""
+            },
+            "layer-protocol-name": "DSR",
+            "layer-protocol-qualifier": "tapi-dsr:DIGITAL_SIGNAL_TYPE_GigE"
+        }
+    ]
+}

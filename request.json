@@ -1,0 +1,67 @@
+{
+    "service-layer": "DSR",
+    "uuid": "49bc1c8a-9871-42ec-9399-bab62ab9153b",
+    "name": [
+        {
+            "value-name": "SERVICE_NAME",
+            "value": "a"
+        }
+    ],
+    "service-type": "POINT_TO_POINT_CONNECTIVITY",
+    "requested-capacity": {
+        "total-size": {
+            "value": 1280,
+            "unit": "MBPS"
+        }
+    },
+    "connectivity-direction": "BIDIRECTIONAL",
+    "is-exclusive": true,
+    "service-level": "SILVER_LEVEL",
+    "resilience-type": {
+        "protection-type": "ONE_PLUS_ONE_PROTECTION"
+    },
+    "is-coordinated-switching-both-ends": true,
+    "reversion-mode": "REVERTIVE",
+    "preferred-restoration-layer": [
+        "ODU"
+    ],
+    "hold-off-time": 0,
+    "wait-to-revert-time": 1,
+    "route-objective-function": "MIN_WORK_ROUTE_LATENCY",
+    "include-node": [
+        {
+            "topology-uuid": "533e2f54-8a79-4333-a43f-cc8bae04f306",
+            "node-uuid": "26bae8fa-87fb-401b-8902-8c8848d0a51e"
+        }
+    ],
+    "exclude-node": [],
+    "include-link": [],
+    "exclude-link": [
+        {
+            "topology-uuid": "533e2f54-8a79-4333-a43f-cc8bae04f306",
+            "link-uuid": "79a10206-c0f0-49c1-8c22-610b033fe85b"
+        }
+    ],
+    "end-point": [
+        {
+            "local-id": "node337/odu",
+            "role": "SYMMETRIC",
+            "direction": "BIDIRECTIONAL",
+            "service-interface-point": {
+                "service-interface-point-uuid": "9f8eb2a8-6db1-4f88-8e61-db19249c1474"
+            },
+            "layer-protocol-name": "DSR",
+            "layer-protocol-qualifier": "tapi-dsr:DIGITAL_SIGNAL_TYPE_GigE"
+        },
+        {
+            "local-id": "node340/odu",
+            "role": "SYMMETRIC",
+            "direction": "BIDIRECTIONAL",
+            "service-interface-point": {
+                "service-interface-point-uuid": "c8e3d0f2-3646-4f0a-9932-ab8fe4e73a63"
+            },
+            "layer-protocol-name": "DSR",
+            "layer-protocol-qualifier": "tapi-dsr:DIGITAL_SIGNAL_TYPE_GigE"
+        }
+    ]
+}
